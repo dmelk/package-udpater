@@ -3,7 +3,14 @@ Simple NodeJS script that add repositories to the package json
 
 ## Installation
 
-Simply clone repository and run `npm install`. 
+### Standalone
+
+Simply clone repository and run `npm install`.
+
+
+### With docker-compose
+
+If you have docker and docker-compose you can use `./insall.sh` script to install all dependencies.
 
 ## How to use
 
@@ -30,10 +37,16 @@ repository and pull requests.
 
 ## Using with docker-compose
 
-You can use this script with docker-compose. To do so you can just execute
+Just simply run:
 
 ```
-./run_bash cli
+./pkg-update.sh
+```
+
+Also you can access docker container bash by running 
+
+```
+./run_bash.sh
 ```
 
 And proceed from the container.

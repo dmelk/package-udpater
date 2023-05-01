@@ -33,7 +33,10 @@ Package Name - name of the package that you want to add to the package.json file
 Package Version - version of the package that you want to add to the package.json file.
 
 Access Token - access token that you can generate in the bitbucket account. It should have write access to the
-repository and pull requests.
+repository and pull requests. You can omit this param and then you will be able to choose between token or login/password
+authentication.
+
+In case of any parameter is not provided script will ask you to provide it.
 
 ## Using with docker-compose
 
@@ -50,10 +53,3 @@ Also you can access docker container bash by running
 ```
 
 And proceed from the container.
-
-Note that in that case you need manually setup git email and name. For example you can do it like this:
-
-```
-git config --global user.email "your@email"
-git config --global user.name "Your Name"
-```

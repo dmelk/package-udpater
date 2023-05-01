@@ -1,0 +1,13 @@
+{
+  "name": "package-updater",
+  "version": "0.0.1",
+  "description": "Updates package.json, push code to bitbucket and creates pull request",
+  "type": "module",
+  "scripts": {
+    "pkg-update": "node pkg-update.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1",
+    "yargs": "^17.7.2"
+  }
+}
